@@ -19,8 +19,8 @@ label mas_wrs_granblue:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "If you ever need a lucky roll, think of me and I’ll send all my luck your way~",
-            "Gulp... So this is the island the rumors speak of.. Hahaha!"
+            "如果你想要个好运, 想一想我, 我就会把我的好运送给你~",
+            "哇偶... 所以这就是那个传说中的岛... 哈哈哈!"
         ],
         'Window Reactions'
     )
