@@ -2,26 +2,24 @@
 
 # Memories of Self-Care & Literature
 
-A one-person passion project, Memories of Self-Care & Literature (SCL for short) provides new personally written content for all existing parts of the game where writing can be added- from songs, new questions, and moods but also a wide range of light-hearted and interesting topics. 
+一个由一个人热情打造的项目，《自我关怀与文学回忆录》（简称SCL）为游戏中所有可添加文字的部分提供了新的个人撰写内容，包括歌曲、新问题、新心情，以及各种轻松有趣的话题。
 
-This mod currently includes over 58 new topics in total to discuss, 2 songs, 9 window reacts, 8 new intros, 17 farewells, and 5 new moods to talk about in the 'I feel' menu for those tricky times in life.
+这个模组目前总共包括了58个新的话题，2首歌曲，9个窗口反应，8个新的开场白，17个告别语，以及5个新的心情，可以在“我感觉”菜单中讨论在生活中的棘手时刻。
 
-To encourage the dynamics of a blossoming and changing relationship, SCL's content unlocks steadily as you increase Monika's affection.
+为了鼓励一个蓬勃发展和变化中的关系，SCL的内容会随着你增加莫妮卡的好感度而逐渐解锁。
 
-And as the two of you progress through your relationship, you can unlock topics with Monika with random elements that change every time you view them!
+当你和莫妮卡不断进步时，你可以解锁更多的随机话题与莫妮卡交流！
 
-From hearing the inane ramblings of a distracted Monika, flirting terribly with bad pick-up lines, or trying to surprise Monika when she's unaware, SCL makes Monika more dynamic than ever!
+从听闲扯的莫妮卡的胡言乱语，到使用糟糕的撩汉/撩妹台词来卖弄风情，再到试图在莫妮卡毫无防备时给她惊喜，SCL让莫妮卡变得比以往更有活力！
 
-How will Monika change during her time with you? And how can your relationship influence her? 
+莫妮卡在与你在一起的时候会如何改变？你们的关系又会如何影响她？
 
-And in the spirit of DDLC and DDLC+, there's.. perhaps some interesting background to this mod, here and there?
+另外，顺应DDLC和DDLC+的精神，这个模组背后也许会有一些有趣的故事。
 
-# Installation:
+# 安装:
 
-Download source code; in MAS's 'Game' directory (calongside the "Mod_assets" folder and all the scripts for MAS), make sure there is a 'Submods' folder (Create if needed.) Unzip the source code in this folder and Make sure SCL is in a folder of it's own inside the 'Submods' folder.
+下载源代码；在MAS的game/Submods目录下（没有请新建一个）新建一个单独的文件夹，然后将本子模组的内容全部放在里面。
 
-The end result is that your directory has a 'game' folder; in it a 'submods' folder; and then a folder containing the contents of this submod.
+自动更新版本需要Booplicate的[Submod Updater Plugin](https://github.com/Booplicate/MAS-Submods-SubmodUpdaterPlugin)，否则启动游戏时会遇到错误。
 
-Auto-updater version requires Booplicate's [Submod Updater Plugin](https://github.com/Booplicate/MAS-Submods-SubmodUpdaterPlugin) otherwise you will encounter a error upon booting up the game.
-
-This submod was originally created with MAS version 12.8; earlier versions are not guarenteed to work with SCL.
+这个子模组最初是使用MAS 0.12.8版本创建的，早期版本不能保证与SCL兼容。
