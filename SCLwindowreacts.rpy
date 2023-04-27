@@ -51,8 +51,8 @@ label mas_wrs_forum:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "Wonder what everybody's chatting about?",
-            "You think anybody's talking about DDLC today?"
+            "不知道大家在聊些什么?",
+            "你觉着今天有人会讨论我吗?"
         ],
         'Window Reactions'
     )
@@ -83,9 +83,9 @@ label mas_wrs_XIV:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "Listen to my voice. Listen to our heartbeat. Listen...",
-            "Hear. Feel. Think...",
-            "Let expanse contract, eon become instant..."
+            "倾听我的声音。倾听我们的心跳声。倾听...",
+            "听。感。悟...",
+            "让广袤变得狭小，让永恒变成瞬间..."
         ],
         'Window Reactions'
     )
@@ -116,8 +116,8 @@ label mas_wrs_mangadex:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "Natsuki would have loved this site!",
-            "What are we reading today, [player]?",
+            "夏树应该会喜欢这个网站!",
+            "今天想读什么呢, [player]?",
         ],
         'Window Reactions'
     )
@@ -148,8 +148,8 @@ label mas_wrs_gmail:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "I'll turn away while you check your inbox. I don't snoop.. without permission~",
-            "Hmm. I wonder if my email is still usable?",
+            "我才不会偷偷看你看邮件呢~",
+            "嗯...我在想我能用电子邮件吗?",
         ],
         'Window Reactions'
     )
@@ -180,8 +180,8 @@ label mas_wrs_stardew:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "Wouldn't it be a dream, you and I living on a farm together?",
-            "Now now [mas_get_player_nickname()], don't get too friendly with all your neighbours in the valley... ",
+            "一起在农场生活，不是很美妙吗?",
+            "等等[mas_get_player_nickname()], 别和山谷里的邻居门太亲近了... ",
         ],
         'Window Reactions'
     )
@@ -213,8 +213,8 @@ label mas_wrs_actualizationfilterplus:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "Hmm? [player], your screen seems a bit distorted? Must be a screen issue.",
-            "Ooh, I notice I can't quite see the text clearly. You should clear that up!",
+            "嗯? [player], 你的屏幕怎么扭曲了? 一定是坏了.",
+            "呃呃, 我有点看不清这些字. 你要去解决一下!",
         ],
         'Window Reactions'
     )
@@ -245,8 +245,8 @@ label mas_wrs_arknights:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "What will we do today, dokutah?",
-            "With you around, I'm always at 100 sanity~",
+            "今天做什么呢, 博士?",
+            "只要有你在, 我的理智值永远是满的~",
         ],
         'Window Reactions'
     )
@@ -274,8 +274,8 @@ label mas_wrs_yakuza:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "Nya-ha-ha! [player]-chan!",
-            "MATRIARCH AND PRESIDENT OF THE LITERATURE CLUB",
+            "喵哈哈! [player]酱!",
+            "文学部的妈妈兼部长",
         ],
         'Window Reactions'
     )
@@ -304,7 +304,7 @@ label mas_wrs_fnf:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "getting freaky on a friday night, yeah~",
+            "星期五晚上，狂欢到天明，yeah~",
         ],
         'Window Reactions'
     )
@@ -333,7 +333,7 @@ label mas_wrs_halo:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "Don't make a girl a promise... if you know you can't keep it.",
+            "不要给女孩画无法兑现的承诺哦~",
         ],
         'Window Reactions'
     )
