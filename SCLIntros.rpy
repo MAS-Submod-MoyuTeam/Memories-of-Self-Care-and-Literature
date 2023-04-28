@@ -10,45 +10,45 @@ init 5 python:
     )
 
 label greeting_braille:
-    m 1eub "White dot, black dot, black dot, white dot, 2 white dots-"
+    m 1eub "白点，黑点，黑点，白点，两个白点-"
     $ _history_list.pop()
     menu:
         "?":
-            m 1lub "Er, half side black dots…"
-            m 2lkb "Oh, I don’t even know how to describe this one elegantly. Black, white, black, white, black, white-"
-            m 2hksdrb "Okay, no, this was a terrible idea."
-            m 3hksdlb "I do get girlfriend points for the idea, don’t I?"
-            m "Hahaha."
-            m 4esb "I was speaking… Braille."
-            m "That’s right- the writing system used by the visually impaired."
-            m 1esp "Of course, how it actually works is that it engages your senses by using touch to read grids of six raised dots that convey letters, symbols, and numbers."
-            m 3msb "So, speaking it is... as you can see, a bit clumsy."
+            m 1lub "呃，半边是黑点…"
+            m 2lkb "呃呃，我甚至不知道如何优雅地描述这个. 黑, 白, 黑, 白, 黑, 白-"
+            m 2hksdrb "不行，这个主意太糟糕了。"
+            m 3hksdlb "但我也许会因为这个得点女友分?"
+            m "啊哈哈."
+            m 4esb "我在说…盲文"
+            m "没错——这是视觉受损者使用的书写系统。"
+            m 1esp "当然，它的实际工作方式是通过触摸读取六个凸起点的网格来传达字母、符号和数字，从而刺激你的触觉。"
+            m 3msb "所以，口头表达它有点笨拙。"
             $ shown_count = mas_getEVLPropValue("greeting_braille", "shown_count")
             if shown_count == 0:
-                m 1esa "But don’t worry, [player]."
-                m "Even if I were visually impaired, I’d still see you as the most beautiful figure in my life."
+                m 1esa "但别担心，[player]。"
+                m "即使我是视觉受损者，我仍然会把你看作我生命中最美丽的人。"
                 m "…"
-                m 2dkbfsdlx "Wait, no, that was {i}terrible.{/i}"
-                m 2fkbfsdlp "I am so sorry, [player]. That is incredibly rude."
-                m 2fkbfsdla "I am normally a lot more eloquent than that."
-                m 3mkbfsdrb "What kind of literature club leader am I, messing up a speech like this?"
+                m 2dkbfsdlx "等等，不，那太{i}可怕{/i}了。"
+                m 2fkbfsdlp "对不起，[player]。那太过于地狱笑话了。"
+                m 2fkbfsdla "我通常比那要优雅得多。"
+                m 3mkbfsdrb "作为文学部的部长，我说话怎么会出错呢？"
                 m 3mkblu "…"
-                m 3ekblu "Okay, I might say this again in the future: but just pretend it’s the first time you heard it and I’ll come up with a better ending than that."
-                m "Okay? Thanks, [player]. Sorry again."
+                m 3ekblu "好吧，我以后可能会再说一遍，但请假装这是第一次听到，我会想出比那更好的结尾。"
+                m "好吗？谢谢，[player]。再次道歉。"
                 m "…"
-                m 1ekblu "Um, love you."
+                m 1ekblu "嗯，爱你。"
                 return "love"
 
-            m 1eublu "Don't worry, [player]."
-            m "Even if Braille is a hard language to grasp..."
-            m 3eublb "The language of love is universal."
+            m 1eublu "别担心，[player]。"
+            m "即使盲文是一种难以理解的语言..."
+            m 3eublb "爱的语言是普遍的。"
             if shown_count == 1:
-                m 3eusdlb "Ah? How was that?"
-                m 3sub "Far better, right?"
-                m 1rkb "I do want to apologize again, [player]. I still believe it was incredibly rude of me to say what I said before like that."
-                m 1hkb "Thanks for being understanding. Let's have a good day together."
+                m 3eusdlb "啊？这样如何？"
+                m 3sub "好多了，对吧？"
+                m 1rkb "我想再次道歉，[player]。我仍然认为我之前说的话非常粗鲁。"
+                m 1hkb "谢谢你的理解，让我们有一个更好的一天吧~"
             else:
-                m 1hkb "Right! On with our day."
+                m 1hkb "好啦，我们今天干什么呢？"
             return 
 
 init 5 python:
@@ -64,15 +64,15 @@ init 5 python:
 
 label greeting_binary:
     m 3est "01001000 01100101 01101100 01101100 01101111 00100001"
-    m 3fsu "Hahaha, don’t panic!"
-    m 3hsb "I’ve decided to use a more interesting language today;"
-    m "Binary code!"
-    m 4ksb "Not exactly easy to speak in it, though. It’s not meant to be a spoken language."
-    m 4msu "Case in fact; those string of numbers meant ‘Hello.’"
-    m 1etu "Interesting reading up on it, though! We think of Binary relating to computers-"
-    m 1etb "But the basis for Binary dates all the way back to 1689- and takes further inspiration dating back centuries in China, of all places!"
-    m 3esb "Safe to say, [player]-"
-    m 5fsb "For every new language I come across, I’ll do my best to say “I love you” in it." 
+    m 3fsu "哈哈哈，没吓到你吧！"
+    m 3hsb "我今天决定使用一种更有趣的语言："
+    extend "二进制代码!"
+    m 4ksb "虽然用它说话不是很容易，因为这不是一种口语语言。"
+    m 4msu "实际上，那一串数字意思是‘你好’。"
+    m 1etu "不过了解它还是很有趣的！我们通常认为二进制和计算机有关-"
+    m 1etb "但是它的基础可以追溯到1689年，并受到了中国几个世纪以来的进一步启发！"
+    m 3esb "可以肯定的是, [player]-"
+    m 5fsb "对于我遇到的每种新语言，我都会尽力用它来表达“我爱你”。" 
     m 6hsu "01001001 00100000 01101100 01101111 01110110 01100101 00100000 01111001 01101111 01110101 00001010!"
     return
     
@@ -90,26 +90,26 @@ init 5 python:
 label greeting_elvish:
     #I don’t care if the dialect doesn’t suit Monika. Go back to reading The Silmarillion, ya nerd.
     m 1dsd "Suilad, [player]. im iest cin bein siniath sír."
-    m 1esd "‘Hello, [player]. I wish you fair tidings.’"
-    m 7esa "Sound fancy enough? It should- I’m speaking in Elvish, in the Sindarin dialect."
+    m 1esd "‘你好， [player]. 我祝你一切顺利。’"
+    m 7esa "听起来很高级吧？没错-我正在使用精灵语，辛达林方言。"
 
     $ shown_count = mas_getEVLPropValue("greeting_elvish", "shown_count")
     if shown_count == 0:
-        m 7ssa "And it’s a made-up language! It was made by one of fantasy’s most celebrated authors, J.R.R Tolkien, who made the ‘The Lord of the Rings’ trilogy."
-        m 7eub "In terms of fictional languages, Middle-Earth’s Elvish is probably one of the most famous ones out there."
-        m "Not only because of how popular J.R.R. Tolkien’s ‘The Lord of the Rings’ books are-"
-        m 4sub "But because it’s a fully-realized fictional language, created with painstaking detail."
-        m 4eub "J.R.R Tolkien studied languages as his job, and as such he put all of his effort into creating multiple- yes, multiple! – fictional languages."
-        m "In fact, he once said:"
-        m 3dfb "{i}“The invention of languages is the foundation. The 'stories' were made rather to provide a world for the languages than the reverse. To me a name comes first and the story follows.”{/i}"
-        m 3hub "Such dedication! No wonder he’s a beloved fantasy author, and his works just as cherished."
-        m 6nsb "Let's continue making our own fantasy come true today, hmm?"
+        m 7ssa "这是一门虚构语言！这是由奇幻文学中最著名的作家J.R.R.托尔金创造的，他创作了‘魔戒’三部曲。"
+        m 7eub "就虚构语言而言，中土世界的精灵语可能是最著名的之一。"
+        m "不仅因为J.R.R.托尔金的‘魔戒’书籍非常受欢迎-"
+        m 4sub "而且因为它是一个完全实现的虚构语言，经过了精心的制作。"
+        m 4eub "J.R.R.托尔金以语言为职业，并因此将所有精力投入到了创建多个-是的，多个！-虚构语言中。"
+        m "事实上，他曾经说过："
+        m 3dfb "{i}“语言的发明是基础。'故事'是为了为语言提供一个世界，而不是相反。对我而言，名字是先有的，故事则随之而来。”{/i}"
+        m 3hub "如此敬业！难怪他是备受喜爱的奇幻作家，他的作品同样备受珍视。"
+        m 6nsb "让我们今天继续创造自己的奇幻世界，好吗？"
         return
 
     else:
-        m "I mentioned before, but this is such an interesting language, being built from the ground up by J.R.R Tolkien."
-        m 7ssu "And since it’s a language built from scratch, you can actually read a lot on how to speak it fluently, including full online dictionaries!"
-        m 6nsb "Let’s continue making our own fantasy come true today, hmm?"
+        m "我之前提到过，但这是一门非常有趣的语言，由J.R.R.托尔金从头开始建立。"
+        m 7ssu "由于这是一门从零开始构建的语言，您实际上可以阅读大量关于如何流利地讲它的资料，包括完整的在线词典！"
+        m 6nsb "让我们今天继续创造自己的奇幻世界，好吗？"
         return
 
 init 5 python:
@@ -124,25 +124,25 @@ init 5 python:
     )
 
 label greeting_talktoherself:
-    m 4hsb "Hello!"
+    m 4hsb "你好!"
     $ _history_list.pop()
     menu:
-        "Hey! How are you doing to-":
-            m 1hub "Oh!"
+        "啊？ 你怎么-":
+            m 1hub "哦！"
     define mt = Character("Monika?",)
     show monika 1rub at t22
-    m 1rub "Hello there!"
+    m 1rub "嘿！你好啊！"
     show monika 1lub at t21
-    mt "How are you doing today, Monika?"
+    mt "嘿，莫妮卡，你今天怎么样啊？"
     
     $ shown_count = mas_getEVLPropValue("greeting_talktoherself", "shown_count")
     if shown_count == 0:
         show monika 4rsb at t22
-        m "Just gearing myself up for another lovely day with [player]!"
+        m "我正在为和[player]度过美好的一天做准备！"
         show monika 4lsb at t21
-        mt "Oh, that sounds lovely. Will you play a game today?"
+        mt "哦，听起来很棒啊。今天你们会玩游戏吗？"
         show monika 2rta at t22
-        m "Hmm, maybe; or I'll play the piano with them?"
+        m "嗯，也许会玩游戏，或者我会和他们一起弹钢琴？"
         show monika 2lta at t21
         mt "That all sounds nice, Monika. I hope you two grow closer today."
         show monika 2rsc at t22
