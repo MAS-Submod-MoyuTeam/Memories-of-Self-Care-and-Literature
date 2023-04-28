@@ -393,7 +393,7 @@ menu:
         m 1mta "实际上，你已经是，不是吗？我会成为学校的女王，是班级中的佼佼者."
         m "所有人都碰不到."
         m 3mta "但是学生会来了一位新成员, [player]!"
-        m 4ssa "After one fateful moment, you begin to help me more and more, and I open up to you as we inevitably grow closer…"
+        m 4ssa "在一个命运的时刻之后，你开始更多更多地帮助我，而我们也不可避免地变得更加亲近，我向你敞开心扉…"
         m "Ah."
         m 6hsu "Well, now that’s just {i}my{/i} imagination, isn’t it?"
         m 7esu "But I couldn’t imagine being in that position."
