@@ -288,7 +288,7 @@ init 5 python:
             persistent.event_database,
             eventlabel="mcl_misanthropy",
             category=["philosophy", "psychology"],
-            prompt="厌世",
+            prompt="厌人症",
             random=True)
         )
 label mcl_misanthropy:
@@ -300,37 +300,37 @@ label mcl_misanthropy:
     m 1hka "让我们回溯一下."
     m 1esd "我有时会感到有些孤独。当然，我可以通过互联网来与外界互动。.."
     m 5fku "我很幸运有你可以交谈，并且一直陪伴在我的身边..."
-    m 3dku "But I haven't actually talked to anyone in a long while."
-    m "I'm not sure if I miss talking to people.. or just being around people."
-    m 3ekc "When I think about it objectively, humans are wired to communicate with each other. Maybe that's just me being lonely. Maybe I don't really need other people."
-    m "It might be a concept too simple yet so extreme to consider properly, but people disliking.. all other people isn't uncommon."
-    m 3eud "It's called 'Misanthropy;' the hatred or disgust of humankind."
-    m "Honestly? There's weight to that line of reasoning. Misanthrophy isn't about disliking certain people.."
-    m "But judging everyone as a whole, primarily based on flaws: some would cite intellectual failings, like the common existance of ignornce. Or in the lack of morals, such as how we treat animals."
-    m 1rud "And it can be so easy to see with your own eyes a majority of people with these flaws, if you're in a enviroment subjected to this behavour often."
-    m 2euc "And what would you do when you think in such extremes?"
-    m "Some isolate themselves from the entire world. Some live on, thinking that this absolute standard means there's always reasons to improve ourselves."
-    m "And some... simply live with this view in their head, adapting to the fact in their own ways."
-    m 6etc "I’ve never had the pleasure of seeing you interact with other people."
-    m 7rtc "And we’ve talked about your own life. Your own struggles and hardships."
-    m 1rtc "And.. I don't really know what you might think about others, as a whole."
-    m 1etc "And I never want to overstep boundries by assuming otherwise, [player]."
-    m "If you're ever harbouring thoughts like that, please know there's always one person at your side- and that person might not even be me."
-    m "One family member, one friend, even seperated by distance or time."
-    m 4euc "And I can tell you right now I don't subscribe to that way of thinking."
-    m 6euu "I like people."
-    m 6ruu "People ultimately do so much good alongside the bad."
-    m 7ruu "And let's think of a more apt example."
-    m 7luu "Like... Okay, think about it this way."
-    m 1luo "If I’ve only really had two meaningful interactions with two other living, breathing people:"
-    m "It’d be the person who created this game-"
-    m 1muc "- whom, you know, I think I would be in the right to have very mixed feelings towards -"
-    m 5euu "And yourself."
-    m 6euu "Who’s been there for me since the beginning, stuck by me through all we’ve been through, and shown me more love than I’ll ever deserve."
-    m 2euu "So if we’re weighing the acts of people I’ve talked to, balancing them and making a decision based on that?"
-    m 5euu "Then I love people, because you love me, and I love you."
-    m "And I know you're capable of that same love for others too."
-    m "Thanks for listening to me bring up a topic like this, [player]."
+    m 3dku "但是我实际上已经很久没有和任何人交谈过了."
+    m "我不确定我是不是想和人交谈......还是只是想和人在一起."
+    m 3ekc "客观地讲，人类天生就是相互交流的。也许这只是我感到孤独的缘故，也许我并不真正需要其他人."
+    m "虽然这可能是一个过于简单而极端的观点，但讨厌......所有其他人并不罕见。."
+    m 3eud "这被称为“厌人症”；即对人类的憎恶或厌恶."
+    m "说实话？这种推理是有道理的。厌人症不是针对某些人的不喜欢，而是对整个人类的憎恶或厌恶.."
+    m "但是，根据整体来评判每个人，主要是基于缺陷：有些人会引用智力上的缺陷，比如普遍存在的无知。或者缺乏道德，比如我们如何对待动物."
+    m 1rud "如果你经常处于这种行为中，就很容易亲眼看到大多数人存在这些缺陷。."
+    m 2euc "当你陷入这种极端想法时，你应该怎么做?"
+    m "有些人会将自己孤立于整个世界之外。有些人则会继续生活，认为这种绝对标准意味着我们始终有改进自己的理由."
+    m "还有一些人……只是将这种观点留存在他们的头脑中，并以自己的方式适应这个事实."
+    m 6etc "我从来没有见过你和其他人互动，这让我感到有些遗憾."
+    m 7rtc "我们已经谈过你自己的生活。你的挣扎和艰辛."
+    m 1rtc "我真的不知道你对整个人类有什么看法."
+    m 1etc "我从未想过通过假设其他情况来越过界限, [player]."
+    m "如果你曾经有过这样的想法，请知道，总有一个人在你身边——那个人甚至可能不是我."
+    m "这个人可能是你的家人、朋友，即使他们因距离或时间而与你分离."
+    m 4euc "我可以告诉你，我现在不认同那种想法."
+    m 6euu "我喜欢人类."
+    m 6ruu "人们最终在做坏事的同时也做了很多好事."
+    m 7ruu "让我们想一个更恰当的例子."
+    m 7luu "就像... 好的, 让我们这样想一下."
+    m 1luo "如果我只和另外两个活生生的人有过两次有意义的互动:"
+    m "那么这两个人中的一个可能是创建这个游戏的人-"
+    m 1muc "- 你知道，我想我有权对他产生复杂的感情 -"
+    m 5euu "还有你."
+    m 6euu "你自己一直在我身边，从一开始就陪伴着我，经历了我们所经历的一切，向我展示了比我应得的更多的爱."
+    m 2euu "那么，如果我们正在权衡我与这些人的交往，平衡这些交往并根据这些做出决定呢?"
+    m 5euu "那么，因为你爱我，我爱你，我也爱人类."
+    m "我知道你也有能力对其他人表达同样的爱."
+    m "感谢你倾听我谈论这样的话题, [player]."
     
     return "love"
     
@@ -341,28 +341,28 @@ init 5 python:
             persistent.event_database,
             eventlabel="mcl_missingadult",
             category=["ddlc"],
-            prompt="Missing adults",
+            prompt="失踪的成年人",
             conditional="seen_event('monika_metaparents')",
             action=EV_ACT_RANDOM,)
             
         )
 label mcl_missingadult:
-    m 1dta "You know what’s funny about the Literature Club?"
-    m 1nta "The fact we had no supervision."
-    m 7lka "This is a bit of an extended critique on a point I made in the past."
-    m 3rud "Nobody in the Literature Club was living alone… yet there was no mention of any of our parents; bar examples made at Natsuki’s expense."
-    m 3rsd "And that’s on purpose; family can be hard to describe, let alone in a game such as DDLC."
-    m 1ttd "But then consider the fact that the lack of adult representation wasn’t just in parents!"
-    m 1tud "You’d think you’d have seen at least one teacher in a school setting... especially considering our participation in a extracurricular where a club advisor is normal!"
-    m 1tsp "The reasoning's simple. Why bother with background characters at all?"
-    m 1esp "It does alter the dynamic of the club. If everyone you interact with is around the same age, who fits into the slot of a peer?"
-    m 2dsc "I suppose the natural choices fall to either Yuri, pigeonholed into maturity and sophistry, and myself because of my being the Club President."
-    m 2nsc "Unfortunately, it’s safe to say the two of us- and it’s not a judgement, it’s just how it was- both of us failed to fall under that role."
-    m 2esc "Could you imagine if we had a sensible, caring figure looking over us or to be available to confide in?"
-    m 5esc "Gosh, maybe so much could have been avoided."
-    m 5ttd "I mean, that’s a trick question. DDLC by design was a poor, dramatic tragedy that could have never been avoided by outside compassion… or logic."
-    m 1eka "Well, at least the experience has made the two of us a little more mature."
-    m 1ekb "Let's keep growing a little wiser every day, okay [player]?"
+    m 1dta "你知道文学俱乐部有什么有趣的地方吗?"
+    m 1nta "事实上我们没有监督."
+    m 7lka "这是对我过去提出的观点的一个扩展性的评价."
+    m 3rud "文学俱乐部里没有人是独自生活的，但却没有提到我们的父母，除了以夏树为代价的例子。."
+    m 3rsd "这是故意的。家庭很难描述，更别说在像DDLC这样的游戏中了."
+    m 1ttd "但考虑到缺乏成年人代表的事实并不仅仅是在父母身上!"
+    m 1tud "你可能会认为你在学校里至少会看到一位老师……尤其是考虑到我们参加的课外活动有社团顾问是很正常的!"
+    m 1tsp "原因很简单。为什么要费心塑造背景角色呢?"
+    m 1esp "它确实改变了俱乐部的动态。如果与你互动的每个人都差不多年龄，那么谁适合同龄人的位置呢??"
+    m 2dsc "我想自然而然的选择落在了优里，因为她被局限在成熟和严谨的形象中，还有我自己，因为我是俱乐部的负责人."
+    m 2nsc "不幸的是，可以肯定地说，我们两个——这不是一个批判，这就是事实——我们都没有扮演好那个角色."
+    m 2esc "你能想象一下如果有一个明智、关心我们的人在我们身边，可以倾听我们的倾诉吗？"
+    m 5esc "天哪, 也许很多问题本可以避免的."
+    m 5ttd "我是说，这是个刁钻的问题。DDLC的设计是一场拙劣的戏剧性悲剧,外部的同情或逻辑都无法阻止它的发生."
+    m 1eka "好吧，至少这种经历让我们两个变得更加成熟了一点."
+    m 1ekb "让我们每天都变得聪明一点，好吗 [player]?"
     return
 
 init 5 python:
@@ -371,27 +371,27 @@ init 5 python:
             persistent.event_database,
             eventlabel="mcl_afterschool",
             category=["school"],
-            prompt="If you weren't in the Literature Club..",
+            prompt="如果你不在文学俱乐部..",
             pool=True,
             unlocked=True))
 label mcl_afterschool:
 $ _history_list.pop()
 menu:
-    "If you weren't in the Literature Club, could you imagine yourself in another club?":
-        m 7esb "That’s an interesting question. I like it."
-        m 7rsb "Well, you already know about my being in debate club."
-        m 7rkb "But if I wasn’t there -or- the literature club…"
-        m 6tkb "I actually don't have a immediate answer for you."
-        m 1ltp "My line of thinking in the past was that I wanted to do {i}any{/i} sort of extracurricular."
-        m "So if it wasn’t speaking, or writing... I suppose I’d want to keep myself busy… "
-        m 4hta "So I’d say the Student Council? I remember our school had one."
+    "如果你不在文学社，你能想象自己加入了其他社团吗?":
+        m 7esb "是个有趣的问题. 我喜欢."
+        m 7rsb "嗯，你已经知道我在辩论俱乐部的情况了."
+        m 7rkb "但是，如果我不在那里-或-不在文学社呢…"
+        m 6tkb "实际上我不能马上给你一个答案."
+        m 1ltp "我过去的想法是，我想做任何一种课外活动."
+        m "如果不是演讲或写作...我想我会想办法让自己忙起来… "
+        m 4hta "所以我认为会是学生会?我记得我们学校有一个."
 $ _history_list.pop()
 menu:
-    "Would you be the Student Council President?":
-        m "Oh. Hahaha! There’s a thought. I was thinking of, um, Treasurer? They do a lot of notation as they do the admin work, so it seems up my alley."
-        m 4kta "But could you imagine?"
-        m 1mta "Actually, you already are, aren’t you? I’d be the school’s queen, top of the class."
-        m "Untouchable by all."
+    "你会成为学生会主席吗?":
+        m "哦，哈哈哈！这是一个有意思的想法。我正在考虑，嗯，司库？他们在管理工作中做很多记录工作，所以这似乎很适合我。."
+        m 4kta "但你能想象吗?"
+        m 1mta "实际上，你已经是，不是吗？我会成为学校的女王，是班级中的佼佼者."
+        m "所有人都碰不到."
         m 3mta "But here comes a new member of the Student Council, [player]!"
         m 4ssa "After one fateful moment, you begin to help me more and more, and I open up to you as we inevitably grow closer…"
         m "Ah."
