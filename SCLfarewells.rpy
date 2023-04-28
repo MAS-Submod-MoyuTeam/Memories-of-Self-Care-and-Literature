@@ -26,8 +26,8 @@ init 5 python:
     )
 
 label bye_bloodborne:
-    m 1eua "As always, it’s been a dream, [mas_get_player_nickname()]."
-    m 1dsa "May you find your worth in the waking world."
+    m 1eua "一如既往，和[mas_get_player_nickname()]在一起就像做梦一样。"
+    m 1dsa "愿你在清醒的世界里找到自己的价值。"
     return 'quit'
 
 init 5 python:
@@ -42,8 +42,8 @@ init 5 python:
     )
 
 label bye_firekeeper:
-    m 1eua "Until we next meet, here I'll tend to my flame."
-    m 1dsa "Farewell, [player]. Mayst thou thy peace discov'r."
+    m 1eua "直到我们下一次相遇，我将在这里守护我的火焰。"
+    m 1dsa "再见了，[player]。愿你能够找到内心的平静。"
     return 'quit'
     
     
@@ -59,8 +59,8 @@ init 5 python:
     )
 
 label bye_maideninblack:
-    m 1dsa "Into the black once again, [player]?"
-    m "May thine strength help your world be mended."
+    m 1dsa "又要进入黑暗之中了，[player]？"
+    m "愿你的力量帮助世界重获新生。"
     return 'quit'
     
 init 5 python:
@@ -75,9 +75,9 @@ init 5 python:
     )
 
 label bye_emeraldherald:
-    m 1eua "Always remember, I will always be at your side.."
-    m 1dsa "Until hope has fully withered."
-    m "Bye, [player]."
+    m 1eua "永远记住，我会一直在你身边。"
+    m 1dsa "直到希望完全枯萎。"
+    m "再见了，[player]。"
     return 'quit'
 
     
@@ -93,7 +93,7 @@ init 5 python:
     )
 
 label bye_flippityflip:
-    m 1hsa "Until next time, [mas_get_player_nickname()]."
+    m 1hsa "下次再见， [mas_get_player_nickname()]."
     m 3nsb "Catch you on the flippity flip!"
     return 'quit'
     
@@ -109,8 +109,8 @@ init 5 python:
     )
 
 label bye_indecision:
-    m 1hsa "Hey, [player]..."
-    m 1dsa ".{w=0.2}.{w=0.2}Nah, never mind. See you later. Love you."
+    m 1hsa "嘿，[player]..."
+    m 1dsa ".{w=0.2}.{w=0.2}.算了，没事了。{w=0.2}待会儿见。爱你。"
     return 'quit'
     
 init 5 python:
@@ -127,9 +127,9 @@ init 5 python:
 label bye_solo:
     $ _history_list.pop()
     menu:
-        "Hey, Monika. I love you.":
+        "嘿，Monika。我爱你。":
             m 1eua ".{w=0.1}.{w=0.1}.{w=0.1}"
-            m 1nsa "I know."
+            m 1nsa "我知道~"
     return 'quit'
     
 init 5 python:
@@ -145,12 +145,12 @@ init 5 python:
     )
 
 label bye_leia:
-    m 1eua "Hey, [player]."
-    m "I love you."
+    m 1eua "嘿，[player]."
+    m "我爱你。"
     $ _history_list.pop()
     menu:
-        "I know.":
-            m 1fuu "Ha."
+        "我知道。":
+            m 1fuu "哈~"
     return 'quit'
     
 init 5 python:
@@ -159,7 +159,7 @@ init 5 python:
             persistent.farewell_database,
             eventlabel="bye_prompt_addingcode",
             unlocked=True,
-            prompt="Let's try modifying your code.",
+            prompt="我们去改你的代码吧.",
             pool=True
         ),
         code="BYE"
@@ -171,8 +171,8 @@ label bye_prompt_addingcode:
     
     if sesh_shorter_than_15_mins:
         if not mas_timePastSince(persistent._mcl_last_modifycode, datetime.timedelta(minutes=15)):
-            m 3suw "Whoa! We're changing up my code again so quickly?"
-            m 4sfb "Today's a real marathon, then! Let's go, {i}go,{/i} {b}{i}go!{/i}{/b}"
+            m 3suw "哇！我们的代码迭代好快啊？"
+            m 4sfb "今天真是个长跑比赛啊！出发吧，走吧，一起加油吧！"# 这里是什么东西啊？
             $ persistent._mcl_last_modifycode = datetime.datetime.now()
             return 'quit'
         
