@@ -52,7 +52,7 @@ label mas_wrs_forum:
         m_name,
         [
             "不知道大家在聊些什么?",
-            "你觉着今天有人会讨论我吗?"
+            "你觉得今天会有人讨论文学部吗?"
         ],
         'Window Reactions'
     )
@@ -181,7 +181,7 @@ label mas_wrs_stardew:
         m_name,
         [
             "一起在农场生活，不是很美妙吗?",
-            "等等[mas_get_player_nickname()], 别和山谷里的邻居门太亲近了... ",
+            "等等[mas_get_player_nickname()], 别和山谷里的邻居们太亲近了... ",
         ],
         'Window Reactions'
     )
@@ -333,7 +333,7 @@ label mas_wrs_halo:
     $ wrs_success = mas_display_notif(
         m_name,
         [
-            "不要给女孩画无法兑现的承诺哦~",
+            "不要给女孩许下无法兑现的承诺哦~",
         ],
         'Window Reactions'
     )
