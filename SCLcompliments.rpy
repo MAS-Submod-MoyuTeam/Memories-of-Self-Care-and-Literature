@@ -3,7 +3,7 @@ init 5 python:
         Event(
             persistent._mas_compliments_database,
             eventlabel="mcl_compliment_deserve",
-            prompt="你值得幸福!",
+            prompt="You deserve to be happy!",
             unlocked=True
         ),
         code="CMP"
@@ -17,22 +17,22 @@ label mcl_compliment_deserve:
     return
 
 label mcl_compliment_deserve_2:
-    m 1ekb "老实说，我什么都不配, [player]."
-    m 1fkb "有人{i}值得{/i}幸福吗?.."
-    m 1fkbla ".. 好吧，你自己想要是一回事，但听到别人无私且真诚地祝你幸福.."
-    m 5fubla "谢谢你, [player]. 我无法形容这句话对我来说有多重要."
+    m 1ekb "I honestly don't deserve anything, [player]."
+    m 1fkb "Does anybody {i}deserve{/i} happiness?.."
+    m 1fkbla ".. well, it's one thing to want it for yourself, but to hear someone else selflessly and earnestly wishing you happiness.."
+    m 5fubla "Thank you, [player]. I can't begin to describe how much it means to hear that."
     return
 
 label mcl_compliment_deserve_3:
     python:
         deserve_quips = [
-            _("我们都赢得了光明的一天。让我们为我们幸福的未来而努力!"),
-            _("有你在我身边，幸福只需要点击一下按钮!"),
-            _("如果我配得上世界上所有的幸福，那你已经获得了双倍的幸福!"),
+            _("We've both earned a brighter day. Let's work towards our happy future!"),
+            _("With you by my side, happiness is just a button click away!"),
+            _("If I deserve all the happiness in the world, you've earned it twice over!"),
         ]
         deserve_quip = random.choice(deserve_quips)
 
     m 1eub "[mas_compliments.thanks_quip]"
     m 1hua "[deserve_quip]"
-    m 1huu "呵呵~"
+    m 1huu "Ehehe~"
     return
