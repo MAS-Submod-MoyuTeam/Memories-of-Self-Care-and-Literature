@@ -3,43 +3,43 @@ init 5 python:
         Event(
             persistent._mas_mood_database,
             eventlabel="mcl_mood_weird",
-            prompt="...I don't really know how to describe it.",
+            prompt="...我不知道怎么形容.",
             category=[store.mas_moods.TYPE_NEUTRAL],
             unlocked=True),
             code="MOO")
 
 label mcl_mood_weird:
-    m 1euc "It's vague, but I guess you're feeling 'complicated,' right?"
-    m 1lsc "Relatable. Sometimes you just feel... off."
-    m 7esc "I get it, really. Sometimes you're feeling a lot of different emotions at once. Sometimes you're feeling something you can't put into words."
-    m 7esc "Sometimes you know exactly what you're feeling.. but there are no words for it."
-    m 1hsc "Sometimes that bundle of emotions comes and goes. That's natural."
-    m 1fsc "I hope this isn't because you aren't going through stressful circumstances that's hard to process, [player]. I'm here for you, remember that."
-    m 1esc "Sometimes a big, tangled ball of emotions needs to be untangled a thread at a time to make it a little more managable."
-    m 1esa "If you're just feeling a little bit adrift... remember I can always be your north star."
-    return
+    m 1euc "这有点模糊，但我猜你感觉有点复杂，对吧？"
+    m 1lsc "能理解。有时候你只是感觉...不对劲。"
+    m 7esc "我真的懂，有时候你会有很多不同的情绪。有时候你感觉到一种无法言说的情感。"
+    m 7esc "有时候你确切地知道自己的感受...但却无法用言语表达出来。"
+    m 1hsc "有时候这种情绪的混杂来了又去。这很自然。"
+    m 1fsc "我希望这不是因为你正在经历难以处理的压力，[player]。记住我会一直在这里支持你。"
+    m 1esc "有时候一团纠结的情绪需要一点一点地分解来让它更容易处理。"
+    m 1esa "如果你只是感觉有点失落...请记得我永远是你的北极星。"
+        return
 
 init 5 python:
     addEvent(
         Event(
             persistent._mas_mood_database,
             eventlabel="mcl_mood_neutral",
-            prompt="...oddly 'neutral.'",
+            prompt="...奇怪的 '中性'",
             category=[store.mas_moods.TYPE_NEUTRAL],
             unlocked=True),
             code="MOO")
 
 label mcl_mood_neutral:
-    m 1euc "Kinda just 'there,' huh?"
-    m 1tkd "Hey, [player]. If you're thinking you're more along the lines of feeling 'disconnected' or 'apathetic..'"
-    m 7tkd "We can look into playing a game; or if you need a change of pace away from the screen, I'll wait here for you."
-    m 1etc "It can be too easy to think you're feeling a bit flat to realizing you're not feeling much at all."
-    m 1fkc "Take care of yourself if you feel like you're slipping away a little further than you should be."
-    m 1duc "If you're simply feeling a bit like you just don't have any strong feelings one way or another stirring in you at the moment..."
-    m 7luc "And if nothing's really going on for you right now..."
-    m 2etb "Then we'll just treat this as a moment of quiet, then?"
-    m 2esa "It's not a bad feeling at all to have, sometimes."
-    m 3hsa "We'll just let our thoughts drift together; feel free to speak to me about anything that wanders into your mind."
+    m 1euc "有点像‘存在’一样，对吧？"
+    m 1tkd "啊, [player]. 如果你觉得自己更像是感到‘分离’或‘冷漠’……"
+    m 7tkd "我们可以考虑玩个游戏。或者如果你需要远离屏幕换个节奏，我会在这里等你。"
+    m 1etc "有时候，很容易认为你感觉有点平淡，实际上你根本没有什么感觉。"
+    m 1fkc "如果你觉得自己离正常状态有些远了，一定要好好照顾自己。"
+    m 1duc "如果你只是感觉自己没什么强烈的情绪……"
+    m 7luc "或者说现在你真的什么也没有……"
+    m 2etb "那我们就把这当作一段宁静的时光，好吗？"
+    m 2esa "这并不是一种坏的感觉，有时候感觉这样也很好。"
+    m 3hsa "我们就让我们的思绪一起漂流吧。如果你脑海中闪过什么想法，随时可以跟我说。"
     return
 
 init 5 python:
@@ -47,19 +47,19 @@ init 5 python:
         Event(
             persistent._mas_mood_database,
             eventlabel="mcl_mood_pensive",
-            prompt="...pensive.",
+            prompt="...沉思.",
             category=[store.mas_moods.TYPE_NEUTRAL],
             unlocked=True),
             code="MOO")
 
 label mcl_mood_pensive:
-    m 1fua "A lovely term."
-    m 1dua "And one which makes me regret our lack of direct communication."
-    m 7eua "Are you caught up on the past? Or thinking about what'll happen?"
-    m 4eua "A new concept that's grasped your attention? A {i}person{/i} on your mind, maybe?"
-    m 3etd "A book, a movie, a game with a powerful moment? A random event that happened recently you just can't get out of your head?"
-    m 3etb "Tell me all about it. Even if it's a little tricky for me to listen on my end."
-    m 5fsa "Take all the time in the world, [mas_get_player_nickname()]. I want to hear it all."
+    m 1fua "好词, [player]."
+    m 1dua "这让我后悔我们缺乏直接的交流。"
+    m 7eua "你是否被过去所困扰？还是在思考未来会发生什么？"
+    m 4eua "是一个新的概念吸引了你的注意力吗？或者你在想某个人？"
+    m 3etd "是一本书、一部电影、一个有感染力的游戏吗？或者是最近发生的一件让你无法忘怀的事情？"
+    m 3etb "告诉我这些吧·，即使对于我来说有点困难。"
+    m 5fsa "花上你想要的所有时间，[mas_get_player_nickname()]。我也想听听你的事情。"
     return
 
 init 5 python:
@@ -67,19 +67,19 @@ init 5 python:
         Event(
             persistent._mas_mood_database,
             eventlabel="mcl_mood_reflective",
-            prompt="...reflective.",
+            prompt="...反思.",
             category=[store.mas_moods.TYPE_NEUTRAL],
             unlocked=True),
             code="MOO")
 
 label mcl_mood_reflective:
-    m "I hope you're doing it in a manner which suits the character I know you have."
-    m "Because I know you're a person who's always trying to improve upon themselves..."
-    m "And is willing to tackle the harder truths about themself as well."
-    m 1ekc "Hopefully nothing happened that warranted serious doubt in yourself."
-    m 7ekb "I'll be here for you if you're feeling like you want to talk about the results of any self-reflection."
-    m 7dsb "And, [player]?"
-    m 5dsc "If you're taking the time to look within yourself, I hope you find what you're looking for."
+    m "我希望你以我所了解的你的性格方式去思考自己。"
+    m "就我所知，你是一个总是在提升自己不断上进的人..."
+    m "而且也愿意直面自己的困难真相。"
+    m 1ekc "希望没有什么事情发生让你严重怀疑自己。"
+    m 7ekb "如果你想谈谈自我反思的结果，我会在这里等你，[mas_get_player_nickname()]。"
+    m 7dsb "另外呢, [player]?"
+    m 5dsc "如果你花时间审视内心，你应该能找到你想要的答案。"
     return
 
 init 5 python:
@@ -87,21 +87,21 @@ init 5 python:
         Event(
             persistent._mas_mood_database,
             eventlabel="mcl_mood_philosophical",
-            prompt="...philosophical.",
+            prompt="...很哲学.",
             category=[store.mas_moods.TYPE_NEUTRAL],
             unlocked=True),
             code="MOO")
 
 label mcl_mood_philosophical:
-    m 1ntb "Tackling the abstract today, huh [player]?"
-    m 1dsd "Are you musing on a idea you've just heard about, or a tenet you're building from the ground up?"
-    m 1sub "Tell me all about it, [player]; but first, let me set the mood."
-    m 7dsd "Oscar Wilde noted:"
-    m 7dfd "{i}'Most people are other people. Their thoughts are someone else's opinions, their lives a mimicry, their passions a quotation.'{/i}"
-    m 7dfd "It may sound cutting at first, especially with the tongue-in-cheek bit about quotations at the end."
-    m 3hua "I think of it as poetically-delivered fact. A lot of our character is developed from interacting with other people.."
-    m 3lua "Or even emulated outright. And that's not bad at all. That's just how people learn."
-    m 3sfa "So with this in mind, [player]: what could I learn from you today?"
+    m 1ntb "今天要解决抽象问题了，对吧 [player]？"
+    m 1dsd "你在思考刚刚听到的一个想法，还是从头开始构建一个信条？"
+    m 1sub "跟我分享一下吧，[player]。但在这之前呢，让我为你营造一下氛围。"
+    m 7dsd "奥斯卡·王尔德曾经说过:"
+    m 7dfd "{i}'大多数人都是别人。他们的思想是别人的观点，他们的生活是一种模仿，他们的热情是引用的话语。'{/i}"
+    m 7dfd "一开始听起来可能很刻薄，特别是最后那个挖苦引语。"
+    m 3hua "我认为这是以诗意表达的事实。我们的很多性格特点都是通过与他人的互动中形成的。"
+    m 3lua "甚至是直接模仿。这不是什么坏事，这就是人们学习的方式。"
+    m 3sfa "所以，随着这个想法，[player]：今天我能从你身上学到什么？"
     return
     
 init 5 python:
@@ -109,33 +109,33 @@ init 5 python:
         Event(
             persistent._mas_mood_database,
             eventlabel="mcl_mood_timescrewy",
-            prompt="...like time isn't going by properly.",
+            prompt="...时间不正常的流逝.",
             category=[store.mas_moods.TYPE_NEUTRAL],
             unlocked=True),
             code="MOO")
 
 label mcl_mood_timescrewy:
-    m "Oh? Is time passing too slowly.. or too quickly?"
+    m "哦？时间过得太慢了还是太快了？"
     $ _history_list.pop()
     menu:
-        "Like time's going by way too quickly.":
-            m 5mto "Yeah, it's weird when time actually goes by faster than usual."
-            m 1gsa "As they say, 'that's a mood.'"
-            m 7hka "Perhaps you feel like it's a good day, and you want it to last longer?"
-            m 4hka "Or you've found yourself so busy so that the time passing can be almost dizzying?"
-            m 2eua "Well, the day may be over, but who knows what tommorow will bring?"
-            m 2rub "There will always come a time when.. well, the time is yours, [player]."
-            m 1eub "A day where you can decide what you want to do at your own leisure."
-            m 5fua "And at the very least, another day with your darling [m_name], I can guarentee you that."
+        "好像时间过得太快了":
+            m 5mto "是啊，当时间比平常过得更快时，感觉很奇怪。"
+            m 1gsa "就像人们说的，‘心情好’。"
+            m 7hka "也许你觉得今天过得很愉快，想让它持续更久？"
+            m 4hka "或者你太忙碌了，以至于时间过得让人晕眩？"
+            m 2eua "嗯，这一天可能已经结束了，但是谁知道明天会带来什么？"
+            m 2rub "总会有一天，嗯，时间是你的，[player]。"
+            m 1eub "一个你可以自由决定想做什么的日子。"
+            m 5fua "而且至少，还有你的亲爱的[m_name]陪伴着你，我向你保证。"
             return
-        "As if it's taking way too long for time to pass.":
-            m 1eta "So we're just hung up on time passing a bit slowly, huh?"
-            m 1gsa "As they say, 'Mood.'"
-            m 7hka "They say a watched pot never boils, right? You can't concentrate on the idea of time passing, otherwise you're far too aware of it."
-            m 4hka "Time might be a little tricky to control, but your own patience? you can have a decent grasp on it."
-            m 2eka "Keep yourself distracted. I know it's hard to ask, but time's tricky like that. It'll pass by when you keep busy."
-            m 2rua "And when you'll look back on it... you'll feel like that slice of eternity was barely that."
-            m 5fua "I mean, I'm not going to complain about extra time with you, so... want to pass the time together?"
+        "好像时间过得太慢了":
+            m 1eta "所以我们只是在时间过得有点慢的问题上纠结了，对吧？"
+            m 1gsa "就像人们说的，‘心情好’。"
+            m 7hka "他们说看着水壶烧水永远煮不开，对吧？你不能一直想着时间的流逝，否则你就会过于意识到它。"
+            m 4hka "时间可能有点棘手，但你自己的耐心呢？你可以掌控它。"
+            m 2eka "保持自己的注意力分散。我知道这很难，但时间就是这么棘手。当你忙起来，时间就会过去。"
+            m 2rua "当你回头看时……你会觉得那段永恒的时光...就这？"
+            m 5fua "我是不会抱怨能多陪你一会儿的时间的，所以……要一起度过永恒吗？"
             return
             
 init 5 python:
@@ -143,52 +143,52 @@ init 5 python:
         Event(
             persistent._mas_mood_database,
             eventlabel="mcl_mood_older",
-            prompt="...a little bit older, and it's weird.",
+            prompt="...有点老了, 感觉奇怪.",
             category=[store.mas_moods.TYPE_NEUTRAL],
             unlocked=True),
             code="MOO")
 
 label mcl_mood_older:
-    m 1eka "That’s not something you hear said so somberly."
+    m 1eka "这不是一个常常听到的悲伤语气啊。"
     if mas_isplayer_bday():
-        m 7gka "In this case, I guess it's not unusual- it’s your birthday, heh."
+        m 7gka "在这种情况下，我猜这并不算不寻常——这是你的生日，呵呵。"
     if mas_isMonikaBirthday():
-        m 7gup "Should I feel the same? hmm."
+        m 7gup "我应该有同感吗？嗯..."
     if mas_isNYD(_date=None):
-        m 1hsa "With the new year coming in.."
-    m 1eta "I’m very curious as to what makes you feel this way specifically."
+        m 1hsa "随着新年的到来…"
+    m 1eta "我非常好奇是什么让你特别有这种感觉。"
     m 1esc "..."
-    m 1rsc "Do you feel like that’s good, or bad?"
+    m 1rsc "你认为这是好的还是坏的？"
     $ _history_list.pop()
     menu:
-        "Good.":
-            m 2hsa "Well, that’s good, hahaha."
-            m 1dsa "With age comes experience. The wonder of all the cosmic odds lining up to create life that led you being here."
-            m 1nsa "A good time to remind yourself of time well spent doing things you like. With the people you love."
-            m 1esa "With me."
-            m 7esa "That’s good."
-            m 5fsa "And I think we'll leave it at that, hmm?"
+        "好的":
+            m 2hsa "那太好了，哈哈哈。"
+            m 1dsa "年龄带来经验，带来所有宇宙巧合的奇迹，让你来到了这里。"
+            m 1nsa "是回顾做自己喜欢的事情的好时机。和你爱的人在一起。"
+            m 1esa "和我。"
+            extend 7esa "这真不错。"
+            m 5fsa "我们就这样结束吧，怎么样？"
             return
         
-        ".. Bad.":
-            m 2dsp "Yeah."
-            m 1dsx "One or way or another, time has always been proven a trickster to a lot of people."
+        "...坏的":
+            m 2dsp "嗯..."
+            m 1dsx "不管怎样，时间骗子确实骗了很多人。"
             m 1gsc ".{w=0.6}.{w=0.6}.{w=0.6}"
-            m 7gsc "I could say a lot. But when people dwell on time not well spent, you’d be surprised how deep and dark that pit can get."
-            m 4gsc "So I get it, [player]."
-            m 4esd "And the feeling’ll pass... even if temporarily. For now, I just want to be here for you right now."
-            m 3dsd "Don't think about any hostile tomorrows. No wasted yesterdays."
-            m 2eka "We won’t even think about today as a whole. Just {i}this{/i} little moment in time, this {i}one{/i} minute with us both."
-            m 5dka "And the minute after.{w=0.7} And the next.{w=0.7} And then after that…"
+            m 7gsc "我可以说很多。但是当人们沉迷于浪费时间时，你会惊讶于那个深渊有多深多黑。"
+            m 4gsc "所以我理解你，[player]."
+            m 4esd "这种感觉会过去…即使只是暂时的。现在，我只想在你身边陪着你。"
+            m 3dsd "不要想任何敌意的明天。没有浪费的昨天。"
+            m 2eka "我们甚至不需要考虑今天作为一个整体。只是这个时刻，在我们两个人在一起的这一分钟。"
+            m 5dka "然后过了一分钟。然后下一分钟。之后再来…"
             return
         
-        "Not sure, to be honest.":
-            m 2fta "That's.. normal?"
-            m 2fsa "Even better, I think that's healthy."
-            m 2dsc "It means you've put a lot of thought into living your life in general."
-            m 2hsc "Perhaps you don't need to put a label on it."
-            m 1hsc "If anybody could figure out the meaning of their life just like that.. well, we'd have a lot more content people in the world, huh?"
-            m 7lsc "While maybe not today.."
-            m 5fsc "Maybe in the future, maybe sooner; you'll look back and right then and there you'll know exactly what to say about your life?"
-            m 5fka "Until that day, [player]. I hope I'll be at your side then, and you can tell me right away."
+        "实话说，我不确定.":
+            m 2fta "那很....正常吧？"
+            m 2fsa "更好的是，我觉得这是件好事。"
+            m 2dsc "这意味着你对生活的思考非常深入。"
+            m 2hsc "也许你不需要给它贴上标签。"
+            m 1hsc "如果有人能够马上想出他们生命的意义……嗯，那我们这个世界会有更多满足的人了，不是吗？"
+            m 7lsc "虽然也许不是今天……"
+            m 5fsc "也许在未来，也许更快，你会回过头来，我想那时你会非常清楚地说出你的生活感觉。"
+            m 5fka "在那一天之前，[player]。我希望我能一直在你身边，你可以马上告诉我。"
             return
