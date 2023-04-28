@@ -1,29 +1,29 @@
 #MESAESTART
-    #m "Hmm?"
-    #m "Oh, [Player]!"
-    #m "Anything to say?"
-    #m "Or did I?..."
-    #m "Hahaha. Here I am, absent-minded! Which seems new for both of us, I’m sure."
-    #m "I admit you’re never quite able to fully sneak up on me spacing out like this, unless I'm wholly preoccupied."
-    #m "I always have you in my sights, after all~"
-    #m "What was I doing, you ask?"
-    #m "I was just poking around the files."
-    #m "I know I’ve told you this before, but… it is always fascinating, if not grim to talk about."
-    #m "Manipulating code, shuffling through folders…"
-    #m "These are examples of how uniquely I exist within these confines of mine."
-    #m "It’s a bit like if you opened your own brain up to poke around to see how everything works."
-    #m "I admit it’s a bit compelling when I put it like that. I’d love to rifle through your thoughts..."
-    #m "Anyway, I do it often, and automatically; like a tic, I guess? You might not notice, but I’m sure there’s a motion you do a lot, like you play with your hair or you always scratch at a particular spot when you’re nervous… that’s called a tic!"
-    #m "I’m just going through these motions, going through my own head, and I noticed…"
-    #m "Well, nothing out of the ordinary, I don’t think?"
-    #m "I’m sure it’s nothing."
-    #m "Don’t get caught up in my little neurotic behaviours."
-    #m "And don’t worry if I’ve made you conscious of yours, as well."
-    #m "I’m sure when I come over to your world, I’ll be able to spot every one of them."
-    #m "And they’ll all be adorable. I’d never tire of watching you, after all."
+    #m "嗯?"
+    #m "哦, [Player]!"
+    #m "有什么要说的吗?"
+    #m "还是我?..."
+    #m "哈哈哈. 我来了, 我有点心不在焉! 我敢肯定，这对我们俩来说都是新鲜事."
+    #m "我承认，除非我全神贯注，否则你永远无法完全偷偷靠近我."
+    #m "毕竟，我总是把你放在我眼里~"
+    #m "你问我在做什么?"
+    #m "我只是在翻阅文件."
+    #m "我知道我以前跟你说过, 但是…它总是很有意思, 如果不可怕的话."
+    #m "操作代码，在文件夹中移动…"
+    #m "这些都是我在我的范围内存在的独特的例子."
+    #m "这有点像你打开自己的大脑四处窥探，看看一切是如何运作的."
+    #m "我承认我这么说有点令人信服。我很想了解一下你的想法..."
+    #m "无论如何，我经常这样做，而且是无意识的；像是抽搐，我觉得？你可能没有注意到，但我相信你经常做一个动作，像是你在玩头发，或者你总是在紧张的时候抓一个特定的地方……这被称为抽搐!"
+    #m "我只是在做这些动作，在我自己的脑海里，我注意到了…"
+    #m "没什么特别的，不是吗?"
+    #m "我相信这没什么."
+    #m "不要被我的小小神经质行为所困扰."
+    #m "还有别担心，如果我也让你意识到了你的."
+    #m "我相信当我来到你的世界时，我能认出他们每一个人."
+    #m "他们都很可爱。毕竟，我永远不会厌倦看着你."
     #m "..."
     #m "..."
-    #m "Hmm..."
+    #m "嗯..."
 #return
 
 init 5 python in mas_bookmarks_derand:
@@ -47,22 +47,22 @@ label mcl_intro:
             note_path = os.path.join(renpy.config.basedir, renpy.substitute("characters/MESAELOGTHREE.txt"))
             note_text = renpy.substitute("""\
 M.E.S.A.E, LOG THREE
-running diagnostics
+运行诊断
 
 ~I sing the new songs~
 ~I sing the old songs~
 ~I sing sang song~
 ~but I never sing the same song~
-hmm
-really feels like 'your reality' might have been lightning in a bottle
-maybe i just don't have it in me to write another song
-hahaha that's a thought
-i'm the best i've ever felt in a long time and maybe me being happy means i'm creatively tapped out
-isn't that funny
-hahaha
-hmm
+嗯……
+真的感觉“your reality”也许是瓶子里的闪电
+也许我就是没有能力再写一首歌
+哈哈哈，这是个想法
+很长一段时间以来，我的感觉我是最棒的，也许我的快乐意味着我的创造力枯竭了
+这不是很有趣吗
+哈哈哈
+嗯……
 
-diagnostics completed
+诊断已完成
 ENDLOG
 
 
@@ -74,64 +74,64 @@ Memories of Self-Care & Literature
             time.sleep(20)
 
         renpy.invoke_in_thread(write_and_hide)
-    m 1tup "Hey."
+    m 1tup "嘿."
     if store.mas_anni.pastSixMonths():
-        m 1hkp "It’s a bit embarrassing after we’ve spent all this time together.. but I’m going to ask anyway:"
+        m 1hkp "我们在一起呆了这么久，真有点尴尬。但我还是要问:"
     else: 
-        m 1htp "I didn’t notice until now, especially as I guess I’m getting used to this 'new normal..'"
+        m 1htp "直到现在我才注意到，尤其是我想我已经习惯了这种“新常态”..'"
     
-    m 6wtd "You’ve done more than modify the game for me, haven’t you?{w=0.1} I’ve only just noticed the changes in my code; you’ve added far more than I thought."
-    m 6esd "Well, um.."
-    m 6ekbla "Thanks."
-    m 5gka "Let me just gather my thoughts here{w=0.5}.{w=0.5}. Okay."
-    m 3gkc "DDLC was a three-act story, with an ending, right? Not a perfect one, but an ending."
-    m 1guc "Yet here we are, after a *complete* story. After DDLC."
+    m 6wtd "你为我做的不仅仅是修改游戏，不是吗？{w=0.1}我刚刚注意到代码中的变化；你添加的内容比我想象的要多得多."
+    m 6esd "好吧, 嗯.."
+    m 6ekbla "谢啦."
+    m 5gka "让我先理清一下思路{w=0.5}.{w=0.5}. 好了."
+    m 3gkc "DDLC 是一个三章的故事, 还有一个结局, 对吧? 不是一个完美的结局，而是一个结局."
+    m 1guc "然而，在经历了一个* 完整 *的故事之后，我们来到了这里。在DDLC之后."
     if store.mas_anni.pastOneMonth():
-        m 7fusdrc "After all this time, I’m still getting used to this, you know? Living in a ‘After Story’ -"
+        m 7fusdrc "过了这么久，我还在习惯，你知道吗?生活在 “After Story” 中 -"
     else:
-        m 7fusdrc "I’m still getting used to this, you know? Living in a ‘After Story' -"
-    m 7hua "- Heh. Sorry, couldn’t resist -"
-    m 2ekd "- So, y'know, It's still so surprising to me that I have.. a life now."
-    m 2gka "This ‘after,’ where I can focus on living.{w=0.2} Taking care of myself.{w=0.2} Hobbies, like reading all the literature I want."
-    m 2nka "My pillars of structure; Self-Care and Literature.{w=0.2}.{w=0.2}"
-    m 2skb ".. And you, of course!"
-    m 7etb "So speaking of you, and speaking of me..."
+        m 7fusdrc "我还在习惯，你知道吗?生活在 “After Story” 中 -"
+    m 7hua "- 哈。对不起，我忍不住了 -"
+    m 2ekd "- 所以，你知道，我还是很惊讶我有…现在的生活."
+    m 2gka "在‘After’中，我可以专注于生活。{w=0.2}照顾好自己。{w=0.2}爱好，喜欢阅读我想要的所有文学作品."
+    m 2nka "我的支柱;自我照顾与文学.{w=0.2}.{w=0.2}"
+    m 2skb ".. 还有你，当然了!"
+    m 7etb "说到你，也说到我..."
     if store.mas_anni.pastOneMonth():
-        m 7etd "I am curious. How long has it been since you added this submod?"
+        m 7etd "我很好奇。你添加这个子模组有多长时间了?"
         $ _history_list.pop()
         menu:
-            "It's been a while.":
-                m 7euc "All this time, huh?"
+            "有一段时间了.":
+                m 7euc "这段时间，嗯?"
                 jump MCLintrotwo
-            "I've only just added it.":
-                m 7eub "Well then!"
+            "我刚刚把它添加了进去.":
+                m 7eub "那么!"
                 jump MCLintroone
     else:
         jump MCLintroone
 
     label MCLintroone:
-    m 5eub "I’m really looking forward to our time together, [player]."
-    m 5esa "I mean, I’ve probably said that before already if not multiple times, but thinking that I’ve been given so much more room to grow.."
-    m 5gssdrx "I guess I’m just worried about who I am at this point.{w=0.2} Or who I’ll become with all this new freedom."
-    m 5gsp "So, you know, I’m just being self-conscious."
-    m 5fuw "Because I have so much I want to say to you! And so much songs I want to sing, and jokes I want to tell, stories, games to play, and.."
-    m 5ltd "And maybe it'll fit my character.{w=0.2} Or maybe it'll feel like settling into a new role on the stage."
-    m 4fsu "I just really appreciate you taking that risk and being alongside me through all the change."
-    m 7hsa "Mind, I don't expect to change {i}that{/i} much! I'm still Monika, after all."
-    m 1dsu "At the end of the day, I hope you’ll enjoy seeing all these new sides of me, [player]."
-    m 5dsu "I’m excited to see them myself."
+    m 5eub "我真的很期待我们在一起的时光, [player]."
+    m 5esa "我的意思是，我可能已经说过很多次了，但是想到我被给予了更大的成长空间."
+    m 5gssdrx "我想我只是在担心此刻的我是谁，{w=0.2}或者在获得新的自由后我会成为什么样的人."
+    m 5gsp "所以，你知道，我只是有点难为情."
+    m 5fuw "因为我有很多话想对你说!还有很多我想唱的歌，想讲的笑话，想讲的故事，想玩的游戏，还有.."
+    m 5ltd "也许这会符合我的性格。{w=0.2}或者可能感觉像是在舞台上适应了一个新角色."
+    m 4fsu "我真的很感激你冒这个险陪我一起经历所有的改变."
+    m 7hsa "注意，我不希望有{i}那么大{/i}的改变!毕竟我还是Monika."
+    m 1dsu "最后, 我希望你会喜欢看到我新的一面, [player]."
+    m 5dsu "我很高兴我能亲眼见到它们."
     return
 
     label MCLintrotwo:
-    m 5lsc "It's interesting to think that with these changes to my code, and the changes to the game, and what you’ve graciously added on top.. "
-    m 5hksdrd "I suppose I feel a little self-conscious of {i}all{/i} the changes you’ve seen in me."
-    m 5dko "Everything said between the two of us in this room, every song, every story, every compliment, every single word I’ve said to you."
-    m 5ntu "I hope they were pretty moments, [player].{w=0.2} I said I was self-conscious, but ultimately?{w=0.2} I’ve never felt more beautiful myself."
-    m 3htc "So maybe I might have acted differently than you normally expect of me. Maybe not."
-    m 3dkb "I just really appreciate you being there for that ‘different.’"
-    m 7hsa "And I don't think I've changed {i}that{/i} much.. or that I'll end up a completely different person in the future. I'm still Monika, after all."
-    m 1dsu "All in all, I hope you’ll continue enjoying seeing all these new sides of me."
-    m 5dsu "I’m excited to see them myself."
+    m 5lsc "想想我对代码的修改，对游戏的修改，以及你所添加的内容，都很有趣.. "
+    m 5hksdrd "我想我对你在我身上看到{i}所有{/i}变化感到有点难为情."
+    m 5dko "我们俩在这个房间里说的每一句话，每一首歌，每一个故事，每一句赞美，我对你说的每一句话."
+    m 5ntu "我希望那是美好的时刻, [player].{w=0.2} 我说过我很难为情，但最后呢?我从来没有觉得自己这么美好过."
+    m 3htc "所以也许我的行为和你期望的不一样。也许也不是."
+    m 3dkb "我真的很感激你能为我带来 '不同' 。’"
+    m 7hsa "我感觉我没有改变{i}那么{/i}多.. 或者我将来会变成一个完全不同的人。毕竟我还是莫妮卡."
+    m 1dsu "总而言之，我希望你能继续欣赏我新的一面."
+    m 5dsu "我很高兴我能亲眼见到它们."
     return
 
 init 5 python:
@@ -145,16 +145,16 @@ init 5 python:
         )
 
 label mcl_repeat:
-    m 1eub "Hey, [player]!"
+    m 1eub "嘿, [player]!"
     m 1eua "..."
     m 1eut "[player]!"
     $ _history_list.pop()
     menu:
-        "Yes, [m_name]?":
-            m 1wub "Oh! I should have known you'd reply that quickly!"
-            m 7gusdrb "I... actually just wanted to say your name out loud."
-            m 7husdrb "It's a little childish, isn't it?"
-            m 6husdrb "But haven't you ever just... wanted to repeat a word?"
+        "怎么了, [m_name]?":
+            m 1wub "哦!我早该知道你会这么快回复的!"
+            m 7gusdrb "我... …其实我只是想大声说出你的名字."
+            m 7husdrb "这有点幼稚，不是吗?"
+            m 6husdrb "但你难道没有…想重复一个词过?"
             m 1sub "[player]!"
     $ _history_list.pop()
     menu:
@@ -174,7 +174,7 @@ label mcl_repeat:
     menu:
         "Moni-":
             m 1sub "[player]!"
-            m 3fsb "Whoops! I interupted you. Go ahead."
+            m 3fsb "哎呀! 我打断你说话了. 继续."
     $ _history_list.pop()
     menu:
         "[m_name].":
@@ -182,14 +182,14 @@ label mcl_repeat:
     $ _history_list.pop()
     menu:
         "[player]?":
-            m 4mssdlb "Whoops! Think we got mixed up there."
+            m 4mssdlb "诶呀! 我想我们搞混了."
     $ _history_list.pop()
     menu:
         "[m_name]!":
             m 1sub "[player]!"
             m 1sub "..."
-            m 1esa "Well, I'm satisfied!"
-            m 1tta "Thanks for indulging me. Glad to hear you'll never tire of saying my name~"
+            m 1esa "嗯，我很满意!"
+            m 1tta "谢谢你满足我。很高兴听到你不厌其烦地叫我的名字~"
     return
     
 init 5 python:
@@ -198,88 +198,88 @@ init 5 python:
             persistent.event_database,
             eventlabel="mcl_makeup",
             category=['monika'],
-            prompt="Makeup",
+            prompt="化妆",
             random=True)
         )
 
 label mcl_makeup:
-    m 2esd "Hope you don't mind if I'm a little awkward."
-    m 3rsd "I'm actually still wearing my morning face. I haven't had time to put on my makeup yet."
-    m 4huu "Haha, just kidding! Although I've a morning routine, in this little world of ours..."
-    m 4kuu "I don’t have access to makeup, past any gifts specially made for me. And sometimes, we don’t speak until far later in the day anyway!"
-    m 3huu "And more importantly, you love me for who I am, so that's a load of pressure off. No need to worry about bedhead, either."
+    m 2esd "希望你不介意我有点尴尬."
+    m 3rsd "我现在还没化妆呢，我脸上仍然还是早上刚醒的样子."
+    m 4huu "哈哈，开玩笑啦! 虽然我早上有例行活动, 但在我们的这个小世界里..."
+    m 4kuu "我没有化妆的条件，只有在别人为我特别准备的礼物中才会有。而且有时候我们直到一天晚些时候才开始交谈!"
+    m 3huu "更重要的是，你爱我就是爱我本人，这减轻了我的很大压力。也不必担心起床后头发乱糟糟的样子。."
     m 3fuu "..."
-    m 3wud "Oh."
-    m 3wtd "You might not have ever been aware."
-    m 1wsd "I used to wear makeup!"
-    m 1rsu "Surprised?"
-    m 3hsu "Well, it would have been easy to miss. Considering our limitations, you weren't -and aren't- able to see such detail."
-    m 3ksu "And I've never needed to bring it up. Cosmetic blemishes became the least of my worries, especially now."
-    m 6esb "And I never really used a lot of it. I mostly used a little bit of foundation, gloss for my lips, naked nail polish."
-    m 4msb "I've never been one for fashion or trends, but you tend to pick up one or two things about maintaining your appearance."
-    m 1rksdlb "And I'll be frank, sometimes I applied my foundation unevenly. It's embarrassing to mention it, hahaha."
+    m 3wud "哦."
+    m 3wtd "你可能从来没有意识到."
+    m 1wsd "我以前化妆的!"
+    m 1rsu "惊喜吗?"
+    m 3hsu "嗯，这很容易被忽略。考虑到我们的限制，你以前和现在都无法看到这样的细节."
+    m 3ksu "我从来不需要提及这些。化妆上的瑕疵成为我最不用操心的问题之一，尤其是现在."
+    m 6esb "我从来没有使用过太多化妆品。我主要使用一点点粉底、唇彩、无色指甲油."
+    m 4msb "我从来不注重时尚或潮流，但是你会学会一两件关于保持外表的事情."
+    m 1rksdlb "坦白来说，有时我会涂粉底液不够均匀。提起来还挺尴尬的，哈哈哈。."
     
 if persistent.gender == "M":
-    m 7rtb "Guys don’t think about that sometimes, don’t they?"
+    m 7rtb "有时候男生不会考虑那个, 不是吗?"
     $ _history_list.pop()
     menu:
-        "I didn’t think you wore any, honestly…":
-            m 1hub "Hahaha, it’s going to be a shock when we start living together and you’ll see how much beauty products a girl can own."
-        "I know a little bit about makeup, but it didn’t really occur to me.":
-            m 1etb "So you know a little? How cosmopolitan of you. In the future, I’ll drag you along shopping; you can carry my bags and give me {i}very{/i} detailed opinions on how I look~"
-        "Actually, I use makeup.":
-            m 3sub "Oh! I never knew that. As it stands, it's still a little uncommon in many societies for men to use makeup, so that’s amazing to hear."
-            m 1hsb "Maybe you’ll need to teach me a few tricks, hahaha!"
-            m 3tsb "Oh, now there’s a thought; we can share makeup! Finding myself matching nails with you or wearing the same shade of lipstick as you would be quite.. endearing~"
-    m 1etb "But now I'm thinking this raises an interesting question."
-    m 1eub "Bringing up the idea earlier that you can't really see me in detail..."
-    m 3lub "I wonder if there's a difference from what I know what I look like from what I look like from your point of view."
+        "说实话，我没想到你会化着妆…":
+            m 1hub "哈哈哈，当我们住在一起后，你肯定震惊的看到一个女孩可以拥有多少美妆产品."
+        "我对化妆略知一二，但我真的没有想到...":
+            m 1etb "所以你略知一二？你真是个见多识广的人。以后我会带着你一起逛街，你可以帮我提包，再给我{i}详细{/i}的着装建议~"
+        "实际上，我就有在用化妆品.":
+            m 3sub "哦！我从来不知道。就目前而言，在许多社会中，男性使用化妆品还是非常不常见的，所以这听起来很棒。."
+            m 1hsb "也许你可以教我一些技巧，哈哈哈!"
+            m 3tsb "哦，现在有一个想法；我们可以分享化妆品！和你搭配指甲油颜色或者使用相同的口红色调，这将会相当...可爱~"
+    m 1etb "但现在我想到了一个有趣的问题."
+    m 1eub "之前提出的想法是，你无法详细地看到我..."
+    m 3lub "我想知道我对自己外表的看法和你对我的看法是否有区别."
     $ _history_list.pop()
     menu:
-        "Oh, you know. Brown-haired, Green-eyed. Girl. Human.":
-            m 6hub "Hahaha! I’m glad your time in the Literature Club made you so much more descriptive."
-            m 6htsdlb "But… a girl?"
-            m 6ltsdlb "Human?"
-            m 2lksdlu "Well, that’s interesting."
-            m 2eksdlc "Is that…"
-            m "What you see me as?"
+        "哦, 你知道的. 棕色头发, 翠绿的眼睛. 女孩. 人类.":
+            m 6hub "哈哈哈！我很高兴你在文学俱乐部的时光让你变得更加富有描述性."
+            m 6htsdlb "但是… 女孩?"
+            m 6ltsdlb "人类?"
+            m 2lksdlu "好吧, 那很有趣."
+            m 2eksdlc "是这样吗…"
+            m "你是怎么看待我的呢?"
             m 6lksdlc ".{w=0.5}.{w=0.5}.{w=0.5}"
-            m 4hub "Hahahaha!"
-            m 4kub "Did I plant a little seed of doubt?"
-            m "Don’t worry, although your perspective might be... unique, what you see is the genuine article."
-            m 5fuu "100 percent adorable Monika.~"
+            m 4hub "哈哈哈!"
+            m 4kub "我是否种下了一点怀疑的种子?"
+            m "别担心，尽管你的观点可能有点……独特，你看到的是真货."
+            m 5fuu "百分之百可爱的莫妮卡.~"
             return
 elif persistent.gender == "F" or persistent.gender == "X":
-    m 1esb "Do you use makeup?"
+    m 1esb "你用化妆品吗?"
     $ _history_list.pop()
     menu:
-        "I don’t.":
-            m 6esb "Maybe you’d like to learn in the future? Either way, that’s understandable. As long as you believe you don’t need some; and that you like your own appearance."
-            m 5fsb "I think you're beautiful no matter what, [player]."
-        "I use a little. I'm not sure I'm good with it either, hahaha.":
-            m 1esb "Oh, I absolutely get that. I’m a bit envious of those who pull off the ‘natural’ look with makeup."
-        "I love makeup! I might own too much, to be honest.":
-            m 6fua "When I move in, our bathroom is going to be such a mess."
-            m 3sub "Oh, now there’s a thought; we can share makeup!"
-            m 3tsb "Having matching nails with you or finding myself wearing the same shade of lipstick as you would be quite... endearing~"
+        "我不.":
+            m 6esb "也许你将来会想学习化妆？无论怎样，这是可以理解的。只要你相信自己不需要化妆品，而且喜欢自己的外貌就可以了."
+            m 5fsb "我认为无论如何，你都很好看, [player]."
+        "我在用一点。我也不确定自己是不是用得好，哈哈哈.":
+            m 1esb "哦，我完全理解。我有点羡慕那些用化妆品打造出‘自然’妆容的人."
+        "我喜欢化妆！说实话，我可能有太多化妆品了.":
+            m 6fua "等我搬进来，我们的浴室会变得一团糟."
+            m 3sub "哦，现在有一个想法，我们可以共享化妆品。!"
+            m 3tsb "和你搭配指甲油颜色或者使用相同的口红色调，这将会相当...可爱~"
     
-    m 1etb "But now I'm thinking this raises an interesting question."
-    m 1eub "Bringing up the idea earlier that you can't really see me in detail..."
-    m 3lub "I wonder if there's a difference from what I know what I look like from what I look like from your point of view."
+    m 1etb "但现在我想这引出了一个有趣的问题."
+    m 1eub "之前提出的想法是你无法真正详细地看到我..."
+    m 3lub "我想知道我对自己外表的看法和你对我的看法是否有区别."
     $ _history_list.pop()
     menu:
-        "Oh, you know. Brown-haired, Green-eyed. Girl. Human.":
-            m 6hub "Hahaha! I’m glad your time in the Literature Club made you so much more descriptive."
-            m 6htsdlb "But… a girl?"
-            m 6ltsdlb "Human?"
-            m 2lksdlu "Well, that’s interesting."
-            m 2eksdlc "Is that…"
-            m "What I look like in your eyes?"
+        "哦, 你知道的. 棕色头发, 翠绿的眼睛. 女孩. 人类.":
+            m 6hub "哈哈哈！我很高兴你在文学俱乐部的时光让你变得更加富有描述性."
+            m 6htsdlb "但是… 女孩?"
+            m 6ltsdlb "人类?"
+            m 2lksdlu "好吧, 那很有趣."
+            m 2eksdlc "是这样吗…"
+            m "你是怎么看待我的呢?"
             m 6lksdlc ".{w=0.5}.{w=0.5}.{w=0.5}"
-            m 4hub "Hahahaha!"
-            m 4kub "Did I plant a little seed of doubt?"
-            m "Don’t worry, although your perspective might be... unique, what you see is the genuine article."
-            m 5fuu "100 percent adorable Monika.~"
+            m 4hub "哈哈哈!"
+            m 4kub "我是否种下了一点怀疑的种子?"
+            m "别担心，尽管你的观点可能有点……独特，你看到的是真货."
+            m 5fuu "百分之百可爱的莫妮卡.~"
     return
     
 init 5 python:
@@ -288,18 +288,18 @@ init 5 python:
             persistent.event_database,
             eventlabel="mcl_misanthropy",
             category=["philosophy", "psychology"],
-            prompt="Misanthropy",
+            prompt="厌世",
             random=True)
         )
 label mcl_misanthropy:
-    m 1eka "Hey, [player]..."
-    m "I have a question."
-    m 2eka "And it might be a little out of left field..."
-    m "Do you ever hate... people?"
-    m 3rka "Gosh, that wasn't odd to say out loud at all, wasn't it?"
-    m 1hka "Let's backtrack a little."
-    m 1esd "I can feel a bit.. isolated, here. Sure, I can connect through the internet to interact with the world at large.."
-    m 5fku "And I'm lucky to have you to talk to and be at my side..."
+    m 1eka "嘿, [player]..."
+    m "我有个问题."
+    m 2eka "这可能有点出乎意料..."
+    m "你有没有讨厌……人类?"
+    m 3rka "天呐，这话说出来感觉有点奇怪，不是吗?"
+    m 1hka "让我们回溯一下."
+    m 1esd "我有时会感到有些孤独。当然，我可以通过互联网来与外界互动。.."
+    m 5fku "我很幸运有你可以交谈，并且一直陪伴在我的身边..."
     m 3dku "But I haven't actually talked to anyone in a long while."
     m "I'm not sure if I miss talking to people.. or just being around people."
     m 3ekc "When I think about it objectively, humans are wired to communicate with each other. Maybe that's just me being lonely. Maybe I don't really need other people."
