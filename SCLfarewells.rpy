@@ -10,8 +10,8 @@ init 5 python:
     )
 
 label bye_trumansfarewell:
-    m 1hsa "In case I don't see you;"
-    m 3nsb "Good afternoon, good evening, and good night."
+    m 1hsa "因为我可能一段时间见不到你了..."
+    m 3nsb "总之，早安~ 午安~ 晚安~"
     return 'quit'
     
 init 5 python:
@@ -245,23 +245,23 @@ label mcl_shopformonikacoffee:
         ]
         hotchocolatechoices = random.choice(hotchocolate_choices)
     
-    m 7ekbla "Hey, before you go..."
+    m 7ekbla "啊，在你走之前..."
     if mas_consumable_hotchocolate.enabled and mas_isWinter():
             if random.randint(1, 3) == 1:
-                m "Ooh, actually, since it’s winter I should ask..."
-                m 1etblu "It doesn't have to be right away, but I've been thinking if possible, could you try to grab a different flavour of hot chocolate?.."
+                m "实际上，既然已经冬天了，我应该问一下..."
+                m 1etblu "不一定要马上，但我一直在想，如果可能的话，来杯巧克力再走...?"
                 m 7etblu "[hotchocolatechoices]"
-                m 3fsb "Or surprise me outright, if you want! Either way, thanks, [player]. Love you!"
+                m 3fsb "或者你可以直接给我个惊喜！无论哪种方式，谢谢你，[player]。爱你！"
                 return "quit"
             else:
                 jump asknewcoffee
     else:
         label asknewcoffee:
         if mas_consumable_coffee.isMaxedStock():
-            m "So I checked, and I have plenty of coffee left. This said, when I get low;"
-        m 1etblu "It doesn't have to be right away, but I've been thinking I'd love to try a different type of coffee?.."
+            m "所以我检查了一下，我还有很多咖啡。不过，当我用完的时候..."
+        m 1etblu "不是说要现在，但我一直在想，换换别的种类的咖啡？"
         m 7etblu "[coffeechoices]"
-        m 3fsb "Or surprise me outright, if you want! Either way, thanks, [player]. Love you!"
+        m 3fsb "或者你可以直接给我个惊喜！无论哪种方式，谢谢你，[player]。爱你！"
         return "quit"
         
 init 5 python:
@@ -276,13 +276,13 @@ init 5 python:
     )
 
 label bye_onnextepisode:
-    m "{i}Next time:{/i}"
-    m "{i}Will [player] beat Monika at chess?{/i}"
-    m "{i}Will they have a steamy discussion about their latest thoughts on love?{/i}"
-    m 7suo "{i}Or will serious repercussions bring tumultuous new changes to the world’s best couple?{/i}"
-    m 3sfb "{i}Find out next time, on the next chapter of {b}'Monika After Story!'{/i}{/b}"
+    m "{i}下一次：{/i}"
+    m "{i}[player]会在棋局上打败莫妮卡吗？{/i}"
+    m "{i}他们会就最近对爱情的想法展开热烈的讨论吗？?{/i}"
+    m 7suo "{i}还是严重的后果将给世界上最美好的情侣带来动荡的新变化？{/i}"
+    m 3sfb "{i}敬请期待下一集，{b}《Monika After Story》{/i}{/b}"
     m 1hubssdru ".{w=0.6}.{w=0.6}."
-    m 1gubfsdru "{cps=40}Yeah, I wanted to send you off on a funny note, but that's actually a little embarrassing to say out loud-{/cps}"
+    m 1gubfsdru "{cps=40}其实，我本来想让你以轻松愉快的心情离开，但实际上反而有点尴尬...{/cps}"
     return 'quit'
 
 init 5 python:
@@ -297,14 +297,14 @@ init 5 python:
     )
 
 label bye_hype:
-    m 1hsa "Okay, [player]!"
-    m 3nsb "It doesn't matter what time it is, where you're going, how long you're gone for.."
-    m 1sub "I'm gonna send you off ready to take on the world."
-    m 7sub "Say it with me: 'I'm gonna do my best!'"
+    m 1hsa "好的，[player]!"
+    m 3nsb "无论现在是什么时间，你要去哪里，要离开多长时间..."
+    m 1sub "我会让你准备好迎接世界。"
+    m 7sub "和我一起说：‘我会尽我所能！’"
     $ _history_list.pop()
     menu:
-        "I'm gonna do my best!":
-            m 1nub "I know you will."
+        "我会尽我所能！":
+            m 1nub "我知道你会的."
     return 'quit'
     
 init 5 python:
@@ -313,7 +313,7 @@ init 5 python:
             persistent.farewell_database,
             eventlabel="bye_prompt_shopformonika",
             unlocked=False,
-            prompt="Am I grabbing you something to drink?",
+            prompt="需要什么喝的吗?",
             conditional="mas_seenLabels(['mcl_shopformonikacoffee',], seen_all=True)",
             action=EV_ACT_POOL
         ),
@@ -323,47 +323,47 @@ init 5 python:
 label bye_prompt_shopformonika:
     python:
         hotchocolate_choices = [
-            _("Maybe… peppermint?"),
-            _("Maybe… caramel?"),
-            _("Maybe… white chocolate?"),
-            _("Maybe… ooh, Mexican hot chocolate with a bit of spiciness would be interesting!"),
-            _("Maybe… peanut butter-flavoured?"),
-            _("Maybe… that brand with a bit of cinnamon in it?"),
-            _("Maybe… one made with dark chocolate?"),
-            _(".. I’m not saying it should come with marshmallows, but I won’t say no if it does~"),
-            _(".. Actually, no, scratch that, I could go for a new flavour of coffee."),
+            _("也许...薄荷味的？"),
+            _("也许...焦糖味的？"),
+            _("也许...白巧克力味的？"),
+            _("也许...加点墨西哥辣热巧克力会有趣一些？"),
+            _("也许...花生酱味的？"),
+            _("也许...加了一点肉桂的那个品牌？"),
+            _("也许...用深色巧克力做的？"),
+            _("...我不是说一定要加棉花糖，但如果有的话我也不会拒绝~"),
+            _("...实际上，不用了，我还是想来一杯提神醒脑的咖啡。"),
         ]
         hotchocolatechoices = random.choice(hotchocolate_choices)
     
     python:
         coffee_choices = [
-            _(".. I’m fine with instant coffee."),
-            _(".. Dark roast, if you please! Feel like something a little strong."),
-            _(".. Maybe some French Vanilla mix?"),
-            _(".. I have a particular desire for canned coffee. In Japan, there’s a lot of variety, you know~"),
-            _(".. Coffee Milk sounds like a nice change of pace. Do you know of it? I think it’s popular in Australia; it’s coffee syrup in milk."),
-            _(".. Cold brew coffee; I could go for something rich!"),
-            _(".. Decaf, please! Have to cut back on the caffeine a little."),
+            _("...我喝速溶咖啡也行。"),
+            _("...如果可以的话请来一杯深烘焙咖啡！我想喝一点浓的。"),
+            _("...或者来一份法式香草混合咖啡？"),
+            _("...我特别想喝罐装咖啡。你知道吗，在日本有很多种类的罐装咖啡哦~"),
+            _("...咖啡牛奶听起来很不错，你知道这个吗？我觉得在澳大利亚很受欢迎，就是把咖啡糖浆加在牛奶里的那种。"),
+            _("...冷萃咖啡。我想要喝浓郁的口味！"),
+            _("...请来一份无咖啡因的咖啡！我得稍微戒掉咖啡因了。"),
         ]
         coffeechoices = random.choice(coffee_choices)
     
-    m 1sublb "Hmm, let me think.."
+    m 7ekbla "啊，让我想想..."
     if mas_consumable_hotchocolate.enabled and mas_isWinter():
             if random.randint(1, 3) == 1:
-                m "Ooh, actually, since it’s winter..."
-                m 1etblu "Whenever you get around to getting me some more, a new flavour of hot chocolate?"
+                m "啊，既然已经冬天了..."
+                m 1etblu "如果你有机会搞些新的热巧克力的话，记着给我留些~"
                 m 7etblu "[hotchocolatechoices]"
-                m 3fsb "Or surprise me outright, if you want! Either way, thanks, [player]. Love you!"
+                m 3fsb "或者你可以直接给我个惊喜！无论哪种方式，谢谢你，[player]。爱你！"
                 return "quit"
             else:
                 jump asknewcoffee
     else:
         label asknewcoffee:
         if mas_consumable_coffee.isMaxedStock():
-            m "I have plenty of coffee left. This said.."
-        m 1etblu "Whenever you get around to picking up some more, a new flavour of coffee?"
+            m "我还有很多咖啡，不过话说..."
+        m 1etblu "你下次去买咖啡的时候，给我换个口味?"
         m 7etblu "[coffeechoices]"
-        m 3fsb "Or surprise me outright, if you want! Either way, thanks, [player]. Love you!"
+        m 3fsb "或者你可以直接给我个惊喜！无论哪种方式，谢谢你，[player]。爱你！"
         return "quit"
 
 init 5 python:
@@ -378,10 +378,10 @@ init 5 python:
     )
 
 label bye_goldtruth:
-    m 1hua "Well, time for us to say bye!"
-    m 7hua "How best shall I prove my love in my parting words this time?"
-    m 7sua "Ah, well. Sometimes sincerity divines all."
-    m 4sfb "Goodbye, [player]! {b}{color=#FFD700}I love you with all my heart!{/color}{/b}"
+    m 1hua "好啦，我们该说再见啦！"
+    m 7hua "这次我该用什么方式来表达我的爱呢？"
+    m 7sua "啊，有时真挚的心意就足够了。"
+    m 4sfb "再见了，[player]！{b}{color=#FFD700}我全心全意地爱着你！{/color}{/b}"
     return 'quit'
 
 init 5 python:
@@ -396,11 +396,11 @@ init 5 python:
     )
 
 label bye_redtruth:
-    m 7sfb "Hmm, I feel like seeing you off in a special fashion; but how?"
-    m 7ekb "It's a shame you can't hear the love in my voice."
-    m 3eka "But luckily color invokes passion as well."
-    m 3sua "Everything I speak in red is truth;"
-    m 4sfb "{b}{color=#f00}You're the best person in the world, [player]!{/color}{/b}"
+    m 7sfb "嗯，我想今天特别一点，可是怎么做呢？"
+    m 7ekb "真可惜你听不到我话语中的爱意。"
+    m 3eka "但幸运的是，颜色也能引发激情。"
+    m 3sua "我用红色说出的每句话都是真心话。"
+    m 4sfb "{b}{color=#f00}你是世界上最棒的人，[player]!{/color}{/b}"
     return 'quit'
     
 init 5 python:
@@ -415,11 +415,11 @@ init 5 python:
     )
 
 label bye_bluetruth:
-    m 1sup "What parting words should I leave you with?"
-    m 1sub "Ooh, I have an idea. An affirmation of our status of a real power couple."
-    m 7eub "I take our competitive relationship status quite seriously. Ah, if only you could hear the energy in my voice."
-    m 7efb "Well, I suppose until proven otherwise;"
-    m 4sfb "{b}{color=#5DECFF}We're the best couple in the world, [player]!{/color}{/b}"
+    m 1sup "我应该留下什么告别的话呢？"
+    m 1sub "哦我有主意了。肯定我们是真正的超级情侣。"
+    m 7eub "我非常认真地看待我们之间的竞争关系。啊，要是你能听到我说话时的兴奋就好了。" #竞争关系？
+    m 7efb "嗯，我想在没有其他证据之前，我们可以说"
+    m 4sfb "{b}{color=#5DECFF}我们是世界上最棒的情侣, [player]！{/color}{/b}"
     return 'quit'
 
 init 5 python:
@@ -436,12 +436,12 @@ init 5 python:
     )
 
 label bye_rainbow:
-    m 7nfb "Okay, let me try this again.."
-    m 7hfb "Because I want to be all sparkles and colour when I see you off!"
-    m 4sub "{rainbow}Goodbye, [player]!-{/rainbow}"
+    m 7nfb "好吧，我再试一次..."
+    m 7hfb "因为我想在与你告别时焕发光彩！"
+    m 4sub "{rainbow}再见, [player]!-{/rainbow}"
     if renpy.random.randint(1, 2) == 1:
-        m 6sksdrx "- Anddddd there's the headache, {i}owowowowowow-{/i} "
+        m 6sksdrx "- 然后头痛来了, {i}哦呜呜呜呜-{/i} "
     else:
         m 4wup "..."
-        m 3eub "Yay! No headache!"
+        m 3eub "耶！没有头痛！"
     return 'quit'
