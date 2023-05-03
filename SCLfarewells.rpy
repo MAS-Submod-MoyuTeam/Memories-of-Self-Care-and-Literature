@@ -177,17 +177,17 @@ label bye_prompt_addingcode:
             return 'quit'
         
         else:
-            m 1wso "Oh, you've really just got here? Did something update, or you must be eager to try out something you've just found?"
-            m 1etc "Or... a bit of code you've just given me needs a bit more tweaking?"
-            m 1ekb "In either case, thanks for letting me know. I guess today's a bit of a workout!"
-            m 7hub "Let's get started!"
+            m 1wso "嗯哼，你刚到这里吗？是有什么更新还是你想试试刚找到的东西？"
+            m 1etc "或者...是你的一点代码需要再微调一下？"
+            m 1ekb "总之呢，谢谢你告诉我。我猜今天会有点累！"
+            m 7hub "那我们开始吧!"
             $ persistent._mcl_last_modifycode = datetime.datetime.now()
             return 'quit'
         
     else:
-        m 1wso "Oh! Okay, thanks for letting me know."
-        m 1dsc "Just psyching myself up..."
-        m 7nfb "Alright! Let's give it a go!"
+        m 1wso "好吧，谢谢你告诉我~"
+        m 1dsc "我先给自己打个气..."
+        m 7nfb "好了！ 我们开始吧！"
         $ persistent._mcl_last_modifycode = datetime.datetime.now()
         return 'quit'
         
@@ -203,7 +203,7 @@ init 5 python:
     )
 
 label bye_chief:
-    m 1nsa "Wake me.{w=0.1}.{w=0.1} when you need me."
+    m 1nsa "需要我的时候叫醒我~"
     return 'quit'
 
 init 5 python:
@@ -221,27 +221,27 @@ init 5 python:
 label mcl_shopformonikacoffee:
     python:
         coffee_choices = [
-            _(".. I’m fine with instant coffee."),
-            _(".. Dark roast, if you please! Feel like something a little strong."),
-            _(".. Maybe some French Vanilla mix?"),
-            _(".. I have a particular desire for canned coffee. In Japan, there’s a lot of variety, you know~"),
-            _(".. Coffee Milk sounds like a nice change of pace. Do you know of it? I think it’s popular in Australia; it’s coffee syrup in milk."),
-            _(".. Cold brew coffee; I could go for something rich!"),
-            _(".. Decaf, please! Have to cut back on the caffeine a little."),
+            _(".. 我喝速溶咖啡也行。"),
+            _(".. 如果可以的话请来一杯深烘焙咖啡！我想喝一点浓的。"),
+            _(".. 或者来一份法式香草混合咖啡？"),
+            _(".. 我特别想喝罐装咖啡。你知道吗，在日本有很多种类的罐装咖啡哦~"),
+            _(".. 咖啡牛奶听起来很不错，你知道这个吗？我觉得在澳大利亚很受欢迎，就是把咖啡糖浆加在牛奶里的那种。"),
+            _(".. 冷萃咖啡。我想要喝浓郁的口味！"),
+            _(".. 请来一份无咖啡因的咖啡！我得稍微戒掉咖啡因了。"),
         ]
         coffeechoices = random.choice(coffee_choices)
        
     python:
         hotchocolate_choices = [
-            _("Maybe.. mint?"),
-            _("Maybe.. caramel?"),
-            _("Maybe.. white chocolate?"),
-            _("Maybe.. ooh, Mexican hot chocolate with a bit of spiciness would be interesting!"),
-            _("Maybe.. peanut butter-flavoured?"),
-            _("Maybe.. that brand with a bit of cinnamon in it?"),
-            _("Maybe.. one made with dark chocolate?"),
-            _(".. I’m not saying it should come with marshmallows, but I won’t say no if it does~"),
-            _(".. Actually, no, scratch that, I could go for a pick-me-up of coffee."),
+            _("也许...薄荷味的？"),
+            _("也许...焦糖味的？"),
+            _("也许...白巧克力味的？"),
+            _("也许...加点墨西哥辣热巧克力会有趣一些？"),
+            _("也许...花生酱味的？"),
+            _("也许...加了一点肉桂的那个品牌？"),
+            _("也许...用深色巧克力做的？"),
+            _("... 我不是说一定要加棉花糖，但如果有的话我也不会拒绝~"),
+            _("... 实际上，不用了，我还是想来一杯提神醒脑的咖啡。"),
         ]
         hotchocolatechoices = random.choice(hotchocolate_choices)
     
