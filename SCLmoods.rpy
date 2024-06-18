@@ -17,7 +17,7 @@ label mcl_mood_weird:
     m 1fsc "我希望这不是因为你正在经历难以处理的压力，[player]。记住我会一直在这里支持你。"
     m 1esc "有时候一团纠结的情绪需要一点一点地分解来让它更容易处理。"
     m 1esa "如果你只是感觉有点失落...请记得我永远是你的北极星。"
-        return
+    return
 
 init 5 python:
     addEvent(
